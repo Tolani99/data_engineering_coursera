@@ -1,0 +1,3 @@
+Building a database schema for a restaurant booking scenario
+
+When building a database schema for a restaurant booking system there are a few things you must consider. You must consider that customers makereservations for tables and those tables have orders associated with them. An order will have associated menu items that belong to a menu. And the orders are served by a waiter. 
