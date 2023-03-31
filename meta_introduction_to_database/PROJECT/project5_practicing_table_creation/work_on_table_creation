@@ -1,0 +1,31 @@
+Let’s inspect the CREATE TABLE syntax more closely. In this example, let’s look at the syntax to create a table named “customers”in the sample database. The table includes the following columns/fields:
+
+CustomerId 
+
+FirstName  
+
+LastName  
+
+Company 
+
+Address 
+
+City  
+
+State 
+
+Country 
+
+PostalCode 
+
+Phone 
+
+Fax 
+
+Email  
+
+SupportRapid 
+
+The table is created using the following syntax:   
+
+CREATE TABLE customers(CustomerId INT, FirstName VARCHAR(40), LastName VARCHAR(20), Company VARCHAR(80), Address VARCHAR(70), City VARCHAR(40), State VARCHAR(40), Country VARCHAR(40), PostalCode VARCHAR(10), Phone VARCHAR(24), Fax VARCHAR(24), Email VARCHAR(60), SupportRapid INT );   
