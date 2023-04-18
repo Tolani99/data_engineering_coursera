@@ -1,0 +1,37 @@
+The git remote command lets you create, view, and delete connections to other repositories. Remote connections are more like bookmarks rather than direct links into other repositories.
+
+# VIEW remote repo name & location to 'push' to & 'fetch' from
+git remote -v
+# ADD remote repo
+git remote add <name> <url>
+# REMOVE remote repo
+git remote remove <name>
+# RENAME remote repo
+git remote rename <name> <new-name>
+
+# EXAMPLE by steps to remove, add, and rename an existing github repo
+
+# 1. VIEW if project already has remote repo
+git remote -v
+> origin  https://github.com/johndoe/my-repo.git (fetch)
+> origin  https://github.com/johndoe/my-repo.git (push)
+
+# 2. REMOVE the remote repo and (optional) confirm
+git remote remove origin
+git remote
+# line should be blank
+
+# 3. ADD new remote repo and confirm (should see 'origin')
+git remote add origin https://github.com/johndoe/new-repo.git
+git remote
+origin
+
+# 4. RENAME the remote repo to 'upstream'
+git remote rename origin upstream
+git remote
+upstream
+
+# NOTE: 'origin' is just a standard convention name, remote repos are
+# named to use a shorthand instead of the long url   
+0
+
