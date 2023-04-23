@@ -1,0 +1,2 @@
+create table LegacyClients(ClientID varchar(20), FullName varchar(50), ContactNumber char(10), Location varchar(50));
+insert into LegacyClients(ClientID, FullName, ContactNumber, Location) values('Cl1', 'Takashi Ito', '351786345', 'Graham County'), ('Cl2', 'Jane Murphy', '351567243', 'Pinal County'), ('Cl3', 'Laurina Delgado', '351342597', 'Santa Cruz County'), ('Cl4', 'Mike Edwards', '351342509', 'Gila County'), ('Cl5', 'Julia Marr', '351208741', 'Cochise County');
