@@ -1,0 +1,2 @@
+create table CurrentClients(ClientID varchar(20), FullName varchar(50), ContactNumber char(10), Location varchar(50));
+insert into CurrentClients(ClientID, FullName, ContactNumber, Location) values('Cl01', 'Benjamin Clauss', '351854758', 'Graham County'), ('Cl02', 'Altay Ayhan', '351963258', 'Pinal County'), ('Cl03', 'Greta Galkina', '3517784512', 'Santa Cruz County'), ('Cl04', 'Julia Marr', '351854125', 'Cochise County'), ('Cl05', 'Karl Murry', '351314658', 'Gila County');

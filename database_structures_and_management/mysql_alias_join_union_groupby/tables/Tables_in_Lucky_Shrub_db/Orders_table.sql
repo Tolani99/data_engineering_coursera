@@ -1,0 +1,2 @@
+create table orders(OrderID int primary key, ClientID varchar(20), ProductID varchar(20), Quantity int, Cost decimal);
+insert into orders(OrderID, ClientID, ProductID, Quantity, Cost) values(1, 'Cl1', 'P1', 10, 500.00), (2, 'Cl2', 'P2', 5, 100.00), (3, 'Cl3', 'P3', 20, 800.00), (4, 'Cl4', 'P4', 15, 150.00), (5, 'Cl3', 'P3', 10, 450.00), (6, 'Cl2', 'P2', 5, 800.00), (7, 'Cl1', 'P4', 22, 1200.00), (8, 'Cl3', 'P1', 10, 500.00), (9, 'Cl1', 'P1', 10, 500.00), (10, 'Cl2', 'P2', 5, 100.00);
