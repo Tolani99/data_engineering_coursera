@@ -1,0 +1,2 @@
+create table Bookings(BookingID int not null primary key, TableNo int not null, GuestFirstName varchar(20) not null, BookingSlot time not null, EmployeeID int not null);
+insert into Bookings(BookingID, TableNo, GuestFirstName, GuestLastName, BookingSlot, EmployeeID) values(1, 12, 'Anna', 'Iversen', '19:00:00', 1), (2, 12, 'Joakin', 'Iversen', '19:00:00', 1), (3, 19, 'Vanessa', 'McCarthy', '15:00:00', 3), (4, 15, 'Marcos', 'Romero', '17:30:00', 4), (5, 5, 'Hiroki', 'Yamane', '18:30:00', 2), (6, 8, 'Diana', 'Pinto', '20:00:00', 5);
