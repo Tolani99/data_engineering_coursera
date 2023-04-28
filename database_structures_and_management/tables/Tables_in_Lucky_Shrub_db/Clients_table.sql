@@ -1,0 +1,2 @@
+create table Clients(ClientID varchar(20), FullName varchar(50), ContactNumber varchar(20), Address varchar(255));
+insert into Clients(ClientID, FullName, ContactNumber, Address) values('Cl1', 'Takashi Ito', '351786345', '724 Greenway Drive'), ('Cl2', 'Jane Murphy', '351367243', '102 Sycamore Lane'), ('Cl3', 'Laurina Delgado', '351342597', '291 Oak Wood Avenue'), ('Cl4', 'Benjamin Clauss', '351342509', '831 Beechwood Terrace'), ('Cl5', 'Altay Ayhan', '351208983', '755 Palm Tree Hills'), ('C16', 'Greta Galkina', '351298755', '831 Beechwood Terrace');
