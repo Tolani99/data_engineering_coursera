@@ -1,3 +1,5 @@
+-- To perform SELECT * FROM CLIENTS using Procedures
+
 DELIMITER //
 
 CREATE PROCEDURE GetAllClients()
