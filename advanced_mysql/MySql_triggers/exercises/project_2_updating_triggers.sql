@@ -5,6 +5,7 @@ Create an UPDATE trigger called ProductSellPriceUpdateCheck. This trigger must c
 
 The notification message should be in the following format: ProductID + was updated with a SellPrice of  + SellPrice + which is the same or less than the BuyPrice
 */
+DELIMITER //
 CREATE TRIGGER ProductSellPriceUpdateCheck 
 AFTER UPDATE ON Products 
 FOR EACH ROW 
@@ -13,7 +14,8 @@ BEGIN
         INSERT INTO Notifications (Message) 
         VALUES (CONCAT('ProductID ', NEW.ProductID, ' was updated with a SellPrice of ', NEW.SellPrice, ' which is the same or less than the BuyPrice')); 
     END IF; 
-END
+END //
+DELIMITER ;
 /*
 This trigger will be executed after an update on the Products table and will check if the SellPrice of the updated product is less than or equal to the BuyPrice. If this occurs, then a notification will be added to the Notifications table to inform the sales department of the incorrect value. The notification message will be in the required format.
 */
