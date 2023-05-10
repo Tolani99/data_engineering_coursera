@@ -1,3 +1,8 @@
+/*
+Task 1
+
+Lucky Shrub need to find out how many orders were placed by clients with the following Client IDs in 2022; Cl1, Cl2 and Cl3. They have created the following query to extract this information.
+*/
 with No_of_orders_cl1 as (SELEC
 T CONCAT("Cl1: ", COUNT(OrderID), " orders") AS "Total number of
  orders" FROM Orders WHERE YEAR(Date) = 2022 AND ClientID = "Cl1
