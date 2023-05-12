@@ -1,1 +1,1 @@
-
+Lucky Shrub want to analyze and summarize their data so that they can evaluate the business’ performance. You can help Lucky Shrub to perform a database analysis by using a range of different optimization methods.
