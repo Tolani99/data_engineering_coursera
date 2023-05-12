@@ -24,6 +24,8 @@ END //
 
 DELIMITER ;
 
+-- CALL EvaluateProduct('P1', @sold_items_2020, @sold_items_2021, @sold_items_2022);
+-- SELECT @sold_items_2020, @sold_items_2021, @sold_items_2022;
 /*
 The SQL code you provided creates a stored procedure named "EvaluateProduct" that takes a single input parameter "product_id" and has three output parameters: "SoldItemsIn2020", "SoldItemsIn2021", and "SoldItemsIn2022".
 
