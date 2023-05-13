@@ -25,3 +25,5 @@ Select profit;
 END //
 
 DELIMITER ;
+
+-- CALL GetProfit('P1', 2020);
