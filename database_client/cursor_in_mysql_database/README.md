@@ -95,4 +95,4 @@ END WHILE;
 CLOSE cursor_name;
 
 
-These examples illustrate how cursors can be used to fetch rows from a result set, perform operations on each row individually, and update or delete rows based on specific conditions
+These examples illustrate how cursors can be used to fetch rows from a result set, perform operations on each row individually, and update or delete rows based on specific conditions. Some additions
