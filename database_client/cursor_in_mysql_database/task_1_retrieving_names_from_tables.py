@@ -7,11 +7,11 @@ To access the names of the existing tables in the Little Lemon database, set the
 """
 import mysql.connector as connector
 connection = connector.connect(user="root", password="tolamath")
-cursor = connection.cursor()
+cursor = connection.cursor(buffered=True)
 cursor.execute("show databases")
 #for database in cursor:
 #    print(database)
 cursor.execute("use little_lemon")
-cursor.execute("show tables")
-for tables in cursor:
-    print(tables)
+#cursor.execute("show tables")
+#for tables in cursor:
+#    print(tables)
