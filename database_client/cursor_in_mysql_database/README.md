@@ -1,6 +1,6 @@
 In the context of MySQL database, a cursor is a database object that allows you to retrieve and manipulate rows from a result set returned by a query. It provides a way to traverse the rows in a result set sequentially, one row at a time, and perform operations on each row.
 
-When you execute a SELECT statement in MySQL, the result set can potentially contain multiple rows. A cursor provides a mechanism to iterate through these rows, allowing you to fetch and process them individually.
+When you execute a SELECT statement in MySQL, the result set can potentially contain multiple rows. A cursor provides a mechanism to iterate through these rows, allowing you to fetch and process them individually.`
 
 Cursors can be useful in situations where you need to perform operations on each row of a result set sequentially, such as performing calculations, applying business logic, or updating specific rows based on certain conditions.
 
@@ -96,3 +96,11 @@ CLOSE cursor_name;
 
 
 These examples illustrate how cursors can be used to fetch rows from a result set, perform operations on each row individually, and update or delete rows based on specific conditions. Some additions
+
+Interleaving of sql requests
+
+First query - string object to mysql database
+subsequent query - string object - mysql database
+
+*unread result found
+*Buffered cursor returns all rows
