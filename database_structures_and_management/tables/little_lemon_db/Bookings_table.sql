@@ -1,25 +1,27 @@
-CREATE TABLE Bookings ( 
+CREATE TABLE Bookings (BookingID INT, BookingDate DATE,TableNumber INT, NumberOfGuests INT,CustomerID INT); 
+INSERT INTO Bookings 
+(BookingID, BookingDate, TableNumber, NumberOfGuests, CustomerID) 
+VALUES 
+(10, '2021-11-10', 7, 5, 1),  
 
-  BookingID INT, 
+(11, '2021-11-10', 5, 2, 2),  
 
-  TableNo INT, 
+(12, '2021-11-10', 3, 2, 4), 
 
-  GuestFirstName VARCHAR(100), 
+(13, '2021-11-11', 2, 5, 5),  
 
-  GuestLastName VARCHAR(100), 
+(14, '2021-11-11', 5, 2, 6),  
 
-  BookingSlot TIME, 
+(15, '2021-11-11', 3, 2, 7), 
 
-  EmployeeID INT, 
+(16, '2021-11-11', 3, 5, 1),  
 
-  PRIMARY KEY (BookingID) 
+(17, '2021-11-12', 5, 2, 2),  
 
-);  
+(18, '2021-11-12', 3, 2, 4), 
 
-INSERT INTO Bookings VALUES(1,12,'Anna','Iversen','19:00:00',1),  
+(19, '2021-11-13', 7, 5, 6),  
 
-(2, 12, 'Joakim', 'Iversen', '19:00:00', 1), (3, 19, 'Vanessa', 'McCarthy', '15:00:00', 3), 
+(20, '2021-11-14', 5, 2, 3),  
 
-(4, 15, 'Marcos', 'Romero', '17:30:00', 4), (5, 5, 'Hiroki', 'Yamane', '18:30:00', 2),
-
-(6, 8, 'Diana', 'Pinto', '20:00:00', 5); 
+(21, '2021-11-14', 3, 2, 4);
