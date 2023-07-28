@@ -1,2 +1,0 @@
-from task_1_create_database import connection
-connection.database
