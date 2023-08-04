@@ -1,6 +1,20 @@
 """
-An exceise to filter and store data in mysql
-database
+Task 1:
+Little Lemon need you to help them query
+their database to find out how many bookings
+they have today for table number 12.
+They also need to know the names of the guests
+booked for table 12 and who their servers are.
+These records are located within
+the following tables in the database:
+
+TableNo,
+
+GuestFirstName,
+
+GuestLastName,
+
+and EmployeeID.
 """
 
 # Importing APIs
@@ -33,4 +47,3 @@ cols = cursor.column_names
 print(cols)
 for i in results:
     print(i)
-
