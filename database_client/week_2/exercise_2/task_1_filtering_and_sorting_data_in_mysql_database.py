@@ -35,15 +35,15 @@ FROM Bookings
 WHERE TableNo = 12;"""
 
 # Execute the select_stmt
-cursor.execute(select_stmt)
+# cursor.execute(select_stmt)
 
 # Store in 'results' variable
-results = cursor.fetchall()
+# results = cursor.fetchall()
 
 # Extract column names
-cols = cursor.column_names
+# cols = cursor.column_names
 
 # Print cols and results
-print(cols)
-for i in results:
-    print(i)
+# print(cols)
+# for i in results:
+#    print(i)
