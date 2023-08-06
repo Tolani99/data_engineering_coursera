@@ -35,16 +35,16 @@ ON
 """
 
 # The execution of the join query stmt
-cursor.execute(join_query)
+#cursor.execute(join_query)
 
 # Fetching result
-result = cursor.fetchall()
+#result = cursor.fetchall()
 
 # Getting the columns
-col = cursor.column_names
+#col = cursor.column_names
 
 # Printing columns and result
-print(col)
-for i in result:
-    print(i)
+#print(col)
+#for i in result:
+#    print(i)
 
