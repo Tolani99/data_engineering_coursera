@@ -35,17 +35,17 @@ GROUP BY Hour
 ORDER BY Hour;
 """
 # Execute query statement
-cursor.execute(sql_stmt)
+#cursor.execute(sql_stmt)
 
 # Fetch results
-results = cursor.fetchall()
+#results = cursor.fetchall()
 
 # Print Bookings 
-print("Upcoming Bookings: ")
+#print("Upcoming Bookings: ")
 
 # Use Hour and Bookings
-for row in results:
-    Hour = row[0]
-    Bookings = row[1]
-    print("Hour: {} <<>> {} Booking/s".format(Hour, Bookings))
+#for row in results:
+#    Hour = row[0]
+#    Bookings = row[1]
+#    print("Hour: {} <<>> {} Booking/s".format(Hour, Bookings))
 
