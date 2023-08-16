@@ -10,6 +10,7 @@ Each guest’s full name,
 And the expected arrival time in hours and minutes of each guest (e.g., 15 hours and 0 mins).
 
 """
+
 # Importing modules
 from tasks_1_retrieving_number_of_bookings import cursor
 
