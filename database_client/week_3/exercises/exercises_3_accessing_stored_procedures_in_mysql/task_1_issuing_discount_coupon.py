@@ -37,17 +37,17 @@ END
 """
 
 # executing stored procedure
-cursor.execute(sql_stmt)
+#cursor.execute(sql_stmt)
 
 # creating the stored procedure
-cursor.callproc("TopSpender")
+#cursor.callproc("TopSpender")
 
 # passing the stored procedure
-results = next(cursor.stored_results())
+#results = next(cursor.stored_results())
 
 # fetching the results
-datasets = results.fetchall()
+#datasets = results.fetchall()
 
-for i in datasets:
-    print(i)
+#for i in datasets:
+#    print(i)
 #results = cursor.fetchall()
