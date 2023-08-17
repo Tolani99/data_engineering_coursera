@@ -20,10 +20,19 @@ WHERE
      BillAmount is null;
 END
 """
+# Using the execute command on sql statement
 cursor.execute(sql_stmt)
+
+# calling the procedure
 cursor.callproc("NoArrival")
+
+# Storing in results
 results = next(cursor.stored_results())
+
+# fetching stored result
 datasets = results.fetchall()
+
+# Printing column names and results in datasets
 print(results.column_names)
 for data in datasets:
     print(data)
