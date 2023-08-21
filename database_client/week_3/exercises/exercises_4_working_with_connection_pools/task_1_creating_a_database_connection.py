@@ -34,13 +34,13 @@ from mysql.connector.pooling import MySQLConnectionPool
 pool = MySQLConnectionPool(pool_name = "ll_pool_a", pool_size = 3,  **dbconfig)
 
 
-try:
-    print("The connection pool is created with a name:  {}".format(pool.pool_name))
-    print("The size is: {}".format(pool.pool_size))
+#try:
+#    print("The connection pool is created with a name:  {}".format(pool.pool_name))
+#    print("The size is: {}".format(pool.pool_size))
 
-except Error as er:
-    print("Error code: ", er.errno)
-    print("Error messsage: ", er.msg)
+#except Error as er:
+#    print("Error code: ", er.errno)
+#    print("Error messsage: ", er.msg)
 """
 Use the actual name of the database together with authenticated username and password in the above configuration.
 
