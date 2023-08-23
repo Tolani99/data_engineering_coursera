@@ -39,7 +39,7 @@ cursor.execute(PeakHour)
 cursor.callproc("PeakHours")
 results = next(cursor.stored_results())
 dataset = results.fetchall()
-col_names = cursor.column_names
+col_names = results.column_names
 
 print(col_names)
 for data in dataset:
