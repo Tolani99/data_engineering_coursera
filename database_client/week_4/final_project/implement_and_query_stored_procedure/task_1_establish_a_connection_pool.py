@@ -20,16 +20,13 @@ dbconfig = {"database":"little_lemon_db",
             "password":"tolamath"}
 
 from mysql.connector.pooling import MySQLConnectionPool
-try:
-    pool = MySQLConnectionPool(
-       pool_name = "pool_a",
-       pool_size = 2,
-       **dbconfig)
-    print("The connection pool is created with a name {}".format(pool.pool_name))
-    print("The size of the pool is: {}".format(pool.pool_size))
-except Error as er:
-    print("Error code: ", err.errno)
-    print("Error message: ", err.msg)
-
-
-
+#try:
+   # pool = MySQLConnectionPool(
+   #    pool_name = "pool_a",
+   #    pool_size = 2,
+   #    **dbconfig)
+    #print("The connection pool is created with a name {}".format(pool.pool_name))
+    #print("The size of the pool is: {}".format(pool.pool_size))
+#except Error as er:
+    #print("Error code: ", err.errno)
+    #print("Error message: ", err.msg)
