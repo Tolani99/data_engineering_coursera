@@ -50,4 +50,3 @@ END
 
 #for i in datasets:
 #    print(i)
-#results = cursor.fetchall()
