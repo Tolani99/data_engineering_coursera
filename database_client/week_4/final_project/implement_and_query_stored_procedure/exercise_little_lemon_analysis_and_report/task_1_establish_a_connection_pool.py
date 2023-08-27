@@ -34,9 +34,8 @@ try:
     pool = MySQLConnectionPool(pool_name = "pool_b",
                                pool_size = 2,
                                 **dbconfig)
-    print("Pool name is {} and Pool size is {}".format(pool.pool_name, pool.pool_size))
+    #print("Pool name is {} and Pool size is {}".format(pool.pool_name, pool.pool_size))
 except Error as err:
     print("Error code is: {}".format(err.errno))
-    print("Error message is: {}".format(err.msg))
-
+    #print("Error message is: {}".format(err.msg))
 
