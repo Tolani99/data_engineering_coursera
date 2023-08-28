@@ -30,12 +30,14 @@ dbconfig = {"database":"little_lemon_db",
             "password":"tolamath"}
 
 # Establishing a connection pool
+
 try:
-    pool = MySQLConnectionPool(pool_name = "pool_b",
+    pool_b = MySQLConnectionPool(pool_name = "pool_b",
                                pool_size = 2,
                                 **dbconfig)
-    print("Pool name is {} and Pool size is {}".format(pool.pool_name, pool.pool_size))
+    print("Connection pool 'pool_b' created successfully.")
+
 except Error as err:
     print("Error code is: {}".format(err.errno))
-    #print("Error message is: {}".format(err.msg))
+    print("Error message is: {}".format(err.msg))
 

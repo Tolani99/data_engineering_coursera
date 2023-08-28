@@ -26,16 +26,30 @@ EmployeeID: 6
 
 
 Return all the connections back to the pool.
+
+TIP: The pool size is two. However, you have three connected users. You can only return two connections. Returning a third connection will raise a PoolError. Use try-except to print the error message.
 """
-from task_1_establish_a_connection_pool import pool
-cursor.execute("USE little_lemons")
+
+guests_data = [
+        (8, "Anees", "Java", "18:00", 6),
+        (5, "Bald", "Vin", "19:00", 6),
+        (12, "Jay", "Kon", "19:30", 6)
+]
+
+from task_1_establish_a_connection_pool import pool_b
 
 try:
-    conn1 = pool.get_connection()
-    conn2 = pool.get_connection()
+    conn = pool_b.get_connection()
+    cursor = conn.cursor()
+    cursor.execute("USE lemon_analysis")
 
-    cursor1 = conn1.cursor()
-    cursor2 = conn2.cursor()
-
-    # Insert data for Guest 1
-    cursor1.execute("INSERT INTO Bookings(Table Number
+    insert_query = "INSERT INTO Bookings (TableNumber, FirstName, LastName, BookingTime, EmployeeID) VALUES (%s, %s, %s, %s, %s)"
+    cursor.executemany(insert_query, guests_data)
+    
+    conn.commit()
+    print("Guest data inserted successfully.")
+except Error as e:
+    print("Error inserting guest data:", e)
+finally:
+    cursor.close()
+    conn.close()
