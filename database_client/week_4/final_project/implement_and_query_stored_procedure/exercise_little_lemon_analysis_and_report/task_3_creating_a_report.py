@@ -16,20 +16,20 @@ from task_1_establish_a_connection_pool import pool_b, Error
 try:
     conn = pool_b.get_connection()
     cursor = conn.cursor()
-    cursor.execute("USE lemon_analysis")
+    cursor.execute("USE little_lemon_db")
 
     # Task 3a: Get Little Lemon manager's name and EmployeeID
-    manager_query = "SELECT FirstName, LastName, EmployeeID FROM Employee WHERE Role = 'Manager'"
+    manager_query = "SELECT Name, EmployeeID FROM Employees WHERE Role = 'Manager'"
     cursor.execute(manager_query)
     manager_name, manager_employee_id = cursor.fetchone()
 
     # Task 3b: Get employee with the highest salary's name and role
-    highest_salary_query = "SELECT FirstName, LastName, Role FROM Employee ORDER BY Salary DESC LIMIT 1"
+    highest_salary_query = "SELECT Name, Role FROM Employees ORDER BY Annual_Salary DESC LIMIT 1"
     cursor.execute(highest_salary_query)
     highest_salary_name, highest_salary_role = cursor.fetchone()
 
     # Task 3c: Get number of guests booked between 18:00 and 20:00
-    guests_count_query = "SELECT COUNT(*) FROM Bookings WHERE BookingTime BETWEEN '18:00' AND '20:00'"
+    guests_count_query = "SELECT COUNT(*) FROM Bookings WHERE BookingSlot BETWEEN '18:00' AND '20:00'"
     cursor.execute(guests_count_query)
     guests_count = cursor.fetchone()[0]
 
