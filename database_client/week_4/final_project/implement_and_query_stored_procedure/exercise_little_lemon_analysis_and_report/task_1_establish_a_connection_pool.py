@@ -35,7 +35,7 @@ try:
                                pool_size = 2,
                                 **dbconfig)
     print("Connection pool 'pool_b' created successfully.") 
-    print("The pool size is: ", pool_b.pool_size)
+    print("The pool size is: {}".format(pool_b.pool_size))
 
 except Error as err:
     print("Error code is: {}".format(err.errno))
