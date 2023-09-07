@@ -31,9 +31,9 @@ TIP: The pool size is two. However, you have three connected users. You can only
 """
 
 guests_data = [
-        (7, 8, "Anees", "Java", "18:00", 6),
-        (8, 5, "Bald", "Vin", "19:00", 6),
-        (9, 12, "Jay", "Kon", "19:30", 6)
+        (8, "Anees", "Java", "18:00", 6),
+        (5, "Bald", "Vin", "19:00", 6),
+        (12, "Jay", "Kon", "19:30", 6)
 ]
 
 from task_1_establish_a_connection_pool import pool_b, Error
@@ -43,7 +43,7 @@ try:
     cursor = conn.cursor()
     cursor.execute("USE little_lemon_db")
 
-    insert_query = "INSERT INTO Bookings (BookingID, TableNo, FirstName, LastName, BookingSlot, EmployeeID) VALUES (%s, %s, %s, %s, %s, %s)"
+    insert_query = "INSERT INTO Bookings (TableNo, FirstName, LastName, BookingSlot, EmployeeID) VALUES (%s, %s, %s, %s, %s)"
     cursor.executemany(insert_query, guests_data)
     
     conn.commit()
