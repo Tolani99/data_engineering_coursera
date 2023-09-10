@@ -5,7 +5,8 @@ You have gained all the necessary skills and knowledge required to interact with
 Follow the instructions in the exercises given below and create a Jupyter notebook to produce a Little Lemon analysis and sales report. You need to submit this report for your peers to review.
 
  
-(Special Note: Auto-increment means you don't need to type the subsequent id numbers)
+(Special Note: Auto-increment means you don't need to type the subsequent id numbers
+ Check PDF for complete solution)
 
 ******************************************************************************
 Task 1:
