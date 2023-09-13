@@ -122,4 +122,5 @@ The output should be as follows:
 
 [Assigned to: Employee Name [Employee Role]]
 
-Thank you!                                                                                                                              
+Thank you!
+Finished.                                                                                                                   
