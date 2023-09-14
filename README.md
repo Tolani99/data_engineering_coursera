@@ -14,7 +14,7 @@
 
 
 
-To complete the labs you need to get access to the MySQL environment on Coursera platform. 
+To complete the labs you need to get access to the MySQL environment on Coursera. 
 
 
 
