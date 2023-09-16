@@ -17,10 +17,10 @@ import mysql.connector as connector
 # Create a connection
 connection = connector.connect(user = 'root', password = 'tolamath')
 
-from task_1_establish_a_connection_pool.py import pool_b, Error
+from task_1_establish_a_connection_pool import pool_b, Error
 
 # Add the connection into the pool
-pool.add_connection(cnx = connection)
+pool_b.add_connection(cnx = connection)
 cursor.execute("DROP PROCEDURE IF EXISTS BasicSalesReport;")
 
 
