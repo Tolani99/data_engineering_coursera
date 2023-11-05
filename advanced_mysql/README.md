@@ -1,2 +1,2 @@
 This directory contains projects and exercises
-on use of variables and parameter(Advanced MySQL Topics)
+on several part of (Advanced MySQL Topics)
