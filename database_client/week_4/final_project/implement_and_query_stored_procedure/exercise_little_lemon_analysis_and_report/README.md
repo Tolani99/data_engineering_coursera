@@ -1,6 +1,6 @@
 Little Lemon analysis and sales report
 
-You have gained all the necessary skills and knowledge required to interact with the back-end MySQL database from your Python-based front-end application via the standard database client MySQL Connector/Python. 
+Having gained all the necessary skills and knowledge required to interact with the back-end MySQL database from your Python-based front-end application via the standard database client MySQL Connector/Python. 
 
 Follow the instructions in the exercises given below and create a Jupyter notebook to produce a Little Lemon analysis and sales report. You need to submit this report for your peers to review.
 
