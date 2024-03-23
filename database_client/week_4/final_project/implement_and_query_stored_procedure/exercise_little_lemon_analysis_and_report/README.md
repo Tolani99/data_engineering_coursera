@@ -1,12 +1,10 @@
 Little Lemon analysis and sales report
 
-Having gained all the necessary skills and knowledge required to interact with the back-end MySQL database from your Python-based front-end application via the standard database client MySQL Connector/Python. 
+Having gained all the necessary skills and knowledge required to interact with the back-end MySQL database from Python-based front-end application via the standard database client MySQL Connector/Python. 
 
-Follow the instructions in the exercises given below and create a Jupyter notebook to produce a Little Lemon analysis and sales report. You need to submit this report for your peers to review.
-
+I am creating a Jupyter notebook to produce Little Lemon analysis and sales report.
  
-(Special Note: Auto-increment means you don't need to type the subsequent id numbers
- Check PDF for complete solution)
+(Special Note: Auto-increment means you don't need to type the subsequent id numbers)
 
 ******************************************************************************
 Task 1:
